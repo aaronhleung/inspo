@@ -1,17 +1,136 @@
 body {
-    background-color: #FFFF99;
+    background-color:hsl(60, 96%, 89%);
+    height: 100%;
 }
 
+.container {
+    align-items: center;
+    display: inline-block;
+    margin-left: 350px;
+    
+}
+
+
+
+.customizeSearch {
+    border-radius: 15px;
+    color: rgb(254, 244, 165);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: georgia;
+    -webkit-text-stroke-color:black;;
+    -webkit-text-stroke-width: 1px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 20%;
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(242, 237, 71, 0.5),
+      rgba(255,0,0,0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(255, 196, 95, 0.5),
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(252, 252, 106, 0.5),
+      rgba(213, 230, 19, 0) 70.71%) beige;
+border-radius: 20%;
+  }
+
 #photo {
-   margin-bottom: 150px;
+   margin-top: 50px;
+   margin-bottom: 100px;
+}
+
+.inspo-io {
+    font-family: oxygen;
+    color:hsl(50, 100%, 50%);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 36px;
+}
+
+h1 {
+    font-family: oxygen;
+    color:hsl(50, 100%, 50%);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: oxygen;
+    font-size: 24px;
+    width: 50%;
+    text-align: justify;
+}
+
+.plaid-gradient {
+    background:
+        repeating-linear-gradient(90deg, transparent, transparent 50px,
+          rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+          transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
+          transparent 69px, transparent 116px,
+          rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px,
+          rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+          transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
+          transparent 69px, transparent 116px,
+          rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+        repeating-linear-gradient(-45deg, transparent, transparent 5px,
+          rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
+        repeating-linear-gradient(45deg, transparent, transparent 5px,
+          rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+  
+    background:
+        repeating-linear-gradient(90deg, transparent 0 50px,
+          rgba(255, 127, 0, 0.25) 50px 56px,
+          transparent 56px 63px,
+          rgba(255, 127, 0, 0.25) 63px 69px,
+          transparent 69px 116px,
+          rgba(255, 206, 0, 0.25) 116px 166px),
+        repeating-linear-gradient(0deg, transparent 0 50px,
+          rgba(255, 127, 0, 0.25) 50px 56px,
+          transparent 56px 63px,
+          rgba(255, 127, 0, 0.25) 63px 69px,
+          transparent 69px 116px,
+          rgba(255, 206, 0, 0.25) 116px 166px),
+        repeating-linear-gradient(-45deg, transparent 0 5px,
+          rgba(143, 77, 63, 0.25) 5px 10px),
+        repeating-linear-gradient(45deg, transparent 0 5px,
+          rgba(143, 77, 63, 0.25) 5px 10px);
+  }
+
+#quoteContainer {
+    font-family: georgia;
+    font-size: 24px;
+    text-align: center;
+}
+
+#quote {
+    margin-bottom: 100px;
+}
+
+#customizeSearch {
+    margin-left: 150px;
+    margin-bottom: 150px;
 }
 
 .footer {
     position: fixed;
     bottom: 0;
-    height: 40px; 
+    height: 30px; 
     margin-top: 40px;
-    text-align: center;
+    background-color:rgb(255, 255, 107);
+    width: 100%;
+    font-family: oxygen;
+    color: goldenrod;
+    float: right;
+    text-align: right;
 }
 
 .modal {
@@ -23,7 +142,7 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(0,0,0,); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
   
@@ -50,3 +169,4 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
