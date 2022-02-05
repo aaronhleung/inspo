@@ -5,6 +5,10 @@ const quoteTextEl = $("#quoteText");
 // target photo image element
 const photoImgEl = $("#photoImgEl");
 
+// randon emoji array
+const emojiArray = ["🌻","💛","🍋","✨","🌼","🍯","🥞"];
+console.log(emojiArray);
+
 // target customize button
 const customizeSearch = $("#customizeSearch");
 
