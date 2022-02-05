@@ -10,8 +10,6 @@ body {
     
 }
 
-
-
 .customizeSearch {
     border-radius: 15px;
     color: rgb(254, 244, 165);
@@ -44,12 +42,28 @@ border-radius: 20%;
    margin-bottom: 100px;
 }
 
-.inspo-io {
+.inspo-io-head {
     font-family: oxygen;
     color:hsl(50, 100%, 50%);
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
     font-size: 36px;
+}
+
+.inspo-io-title {
+  font-family: oxygen;
+  color:hsl(50, 100%, 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 34px;
+}
+
+.inspo-io-body {
+  font-family: oxygen;
+  color:hsl(50, 100%, 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 24px;
 }
 
 h1 {
@@ -105,14 +119,25 @@ h2 {
           rgba(143, 77, 63, 0.25) 5px 10px);
   }
 
-#quoteContainer {
+#quoteText {
     font-family: georgia;
     font-size: 24px;
     text-align: center;
+    width: 100%;
 }
 
-#quote {
-    margin-bottom: 100px;
+#quoteEl {
+    margin-bottom: 50px;
+}
+
+#speakerEl {
+  margin-bottom: 50px;
+  align-items: flex;
+}
+
+#quoteSpeaker {
+  text-align: center;
+  font-size: 50px;
 }
 
 #customizeSearch {
@@ -142,22 +167,24 @@ h2 {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0,); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(255, 238, 144); /* Fallback color */
+    background-color: rgba(255, 251, 126, 0.4); /* Black w/ opacity */
 }
   
   /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff5ab;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid rgb(186, 163, 62);
     width: 80%; /* Could be more or less, depending on screen size */
+    color:rgba(143, 77, 63, 0.3);
+    font-family: georgia;
 }
   
   /* The Close Button */
 .close {
-    color: #aaa;
+    color: rgb(238, 213, 23);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -165,8 +192,26 @@ h2 {
   
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(247, 191, 5);
     text-decoration: none;
     cursor: pointer;
 }
 
+.button-div {
+  margin: auto;
+}
+
+#authorInput, #genreInput, #artSearchInput {
+  width: 30%;
+  border:1px solid hsl(50, 100%, 50%);
+}
+
+.submitSearch {
+  width: 100%;
+  border-radius: 15px;
+  background-color:rgb(255, 247, 183);
+}
+
+.row {
+  display: inline-block;
+}

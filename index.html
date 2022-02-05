@@ -22,16 +22,19 @@
             <h1>Inspo.io🌻</h1>
         </header>
         <div class="container">
-            <h2>Welcome to <span class="inspo-io">Inspo.io</span>, the app for all your daily inspiration needs. <br /><br />
-                Start your morning off strong by clicking the customize button below to mine the web for fine art and motivational quotes.</h2>
+            <h2>Welcome to <span class="inspo-io-head">Inspo.io</span>, the app for all your daily inspiration needs.
+                <br /><br />
+                Start your morning off strong by clicking the customize button below to mine the web for fine art and
+                motivational quotes.</h2>
             <div id="photo" class="plaid-gradient card col-6 border border-warning align-items-center">
                 <span id="photoContainer"><img id="photoImgEl" src="assets/images/sunflower-transparent-1.gif"></span>
             </div>
-            <div id="quote" class="plaid-gradient card col-6 border border-warning">
-                <span id="quoteContainer">“Your best and wisest refuge from all troubles is in your science.” - 
-                    <span id="person" class="inspo-io">Ada Lovelace</span>
-                    <span id="randomEmoji">🍋</span>
+            <div id="quoteEl" class="plaid-gradient card col-6 border border-warning">
+                <span id="quoteText">“Your best and wisest refuge from all troubles is in your science.”
                 </span>
+            </div>
+            <div id="speakerEl" class="plaid-gradient card col-6 border border-warning">
+                    <span id="quoteSpeaker" class="inspo-io-body">Ada Lovelace<span id="randomEmoji">🍋</span></span>
             </div>
             <button id="customizeSearch" class="border border-warning customizeSearch">Customize.</button>
         </div>
@@ -42,14 +45,18 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h3 class="text-center">Customize your search and press submit. Thank you!</h3>
-                <label for="author">author</label>
-                <input type="text" id="author" name="author"><br><br>
-                <label for="genre">genre</label>
-                <input type="text" id="genre" name="genre"><br><br>
-                <label for="artSearch">art search</label>
-                <input type="text" id="artSearch" name="artSearch"><br><br>
-                <button>Submit</button>
+                <h3 class="text-center"><span class="inspo-io-title">C</span>ustomize your search and press submit.</h3>
+                <div class="container row">
+                    <label for="author"><span class="inspo-io-body">a</span>uthor.</label>
+                    <input type="text" id="authorInput" name="author"><br><br>
+                    <label for="genre"><span class="inspo-io-body">g</span>enre.</label>
+                    <input type="text" id="genreInput" name="genre"><br><br>
+                    <label for="artSearch"><span class="inspo-io-body">a</span>rt <span class="inspo-io-body">s</span>earch.</label>
+                    <input type="text" id="artSearchInput" name="artSearch"><br><br>
+                </div>
+                <div class="button-div">
+                    <button id="submitSearch" class="border border-warning inspo-io-head submitSearch">Submit.</button>
+                </div>
             </div>
 
         </div>
@@ -61,8 +68,10 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
 
         <!-- jQuery -->
-        <script type="text/javascript"
-        src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
 
     </div>
 </body>
