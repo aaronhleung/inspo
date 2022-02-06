@@ -132,7 +132,7 @@ h2 {
 
 #speakerEl {
   margin-bottom: 50px;
-  align-items: flex;
+  align-items: center;
 }
 
 #quoteSpeaker {
@@ -141,8 +141,12 @@ h2 {
 }
 
 #customizeSearch {
-    margin-left: 190px;
+    margin-left: 140px;
     margin-bottom: 150px;
+}
+
+#randomEmoji {
+  font-size: 50px;
 }
 
 .footer {
