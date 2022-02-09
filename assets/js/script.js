@@ -4,6 +4,8 @@ const quoteSpeakerEl = $("#quoteSpeaker");
 const quoteTextEl = $("#quoteText");
 // target photo image element
 const photoImgEl = $("#photoImgEl");
+// target image container element
+const photoText = $("#photoContainer");
 
 // randon emoji array
 const emojiArray = ["🌻", "💛", "🍋", "✨", "🌼", "🍯", "🥞"];
@@ -59,12 +61,12 @@ function getApi(authorName) {
     const apiUrl = `https://quote-garden.herokuapp.com/api/v3/quotes?author=${authorName}`
 
 
-        fetch(apiUrl)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                try {
+    fetch(apiUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            try {
                 console.log(data);
                 // target capitalized author name
                 console.log(data.data[0].quoteAuthor);
@@ -85,12 +87,37 @@ function getApi(authorName) {
                 // trying to append random emoji
                 console.log(randomEmoji);
                 randomEmojiEl.text(randomEmoji);
-                } catch (error) {
-                    // display alert on screen "author not found"
-                    quoteSpeakerEl.html("Author not found. Try again!");
-                }
-            });
-    }
+            } catch (error) {
+                // display alert on screen "author not found"
+                quoteSpeakerEl.html("Author not found. Try again!");
+            }
+        });
+
+    let randomInt = Math.floor(Math.random() * (500));
+    console.log(randomInt);
+
+    const getObjects = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomInt}`
+
+    fetch(getObjects)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            console.log(data.primaryImageSmall);
+
+            if (!data || !data.primaryImageSmall) {
+                photoText.html("No image found! Please try again");
+                return;
+            }
+
+            let imageUrl = data.primaryImageSmall;
+            photoImgEl.attr("src", imageUrl);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+}
 
 const getAuthorRequest = "https://quote-garden.herokuapp.com/api/v3/authors"
 
