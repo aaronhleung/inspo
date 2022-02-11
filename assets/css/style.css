@@ -238,9 +238,9 @@ h2 {
 @media screen and (max-width: 575px) {
 
   .container {
-    margin-left: 560px;
+    margin-left: 30px;
     margin-top: 40px;
-    width: 1200px;
+    width: 1000px;
 }
 
   #customizeSearch {
@@ -255,6 +255,12 @@ h2 {
 
   .inspo-io-title {
   font-size: 60px;
+}
+
+.modal-content {
+  width: 500px; /* Could be more or less, depending on screen size */
+  margin-left: 40px;
+  height: 60%;
 }
 
   .inspo-io-body {
@@ -291,6 +297,7 @@ h2 {
   .footer {
   font-size: 40px;
   height: 60px;
+  width: 575px;
 }
 
 }
