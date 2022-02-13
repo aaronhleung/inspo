@@ -6,8 +6,10 @@ body {
 .container {
     align-items: center;
     display: inline-block;
-    margin-left: 1100px;
-    text-align: center;   
+    margin-left: 400px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;   
 }
 
 .customizeSearch {
