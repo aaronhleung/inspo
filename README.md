@@ -14,7 +14,8 @@ A healthy mix of HTML, CSS, Javascript, with a sprinkle of jQuery and MD Bootstr
 
 
 ## Link to deployed application
-GitHub Inspo Repo: 
+GitHub Inspo Repo: https://github.com/aaronhleung/inspo
+GitHub Pages URL: https://aaronhleung.github.io/inspo/
 
 ## Collaborators
 Aaron H. Leung (@ https://github.com/aaronhleung),
