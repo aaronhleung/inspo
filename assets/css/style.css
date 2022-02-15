@@ -1,0 +1,305 @@
+body {
+    background-color:hsl(60, 96%, 89%);
+    height: 100%;
+}
+
+.container {
+    align-items: center;
+    display: inline-block;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;   
+}
+
+.customizeSearch {
+    border-radius: 15px;
+    color: rgb(254, 244, 165);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: georgia;
+    -webkit-text-stroke-color:black;;
+    -webkit-text-stroke-width: 1px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 20%;
+    background:
+    radial-gradient(circle at 50% 0,
+      rgba(242, 237, 71, 0.5),
+      rgba(255,0,0,0) 70.71%),
+    radial-gradient(circle at 6.7% 75%,
+      rgba(255, 196, 95, 0.5),
+      rgba(0,0,255,0) 70.71%),
+    radial-gradient(circle at 93.3% 75%,
+      rgba(252, 252, 106, 0.5),
+      rgba(213, 230, 19, 0) 70.71%) beige;
+border-radius: 20%;
+  }
+
+#photo {
+   margin-top: 50px;
+   margin-bottom: 100px;
+}
+
+.inspo-io-head {
+    font-family: oxygen;
+    color:hsl(50, 100%, 50%);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 60px;
+}
+
+.inspo-io-title {
+  font-family: oxygen;
+  color:hsl(50, 100%, 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 40px;
+}
+
+.inspo-io-body {
+  font-family: oxygen;
+  color:hsl(50, 100%, 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 32px;
+}
+
+h1 {
+    font-family: oxygen;
+    color:hsl(50, 100%, 50%);
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    font-size: 120px;
+}
+
+h2 {
+    font-family: oxygen;
+    font-size: 24px;
+    width: 50%;
+    text-align: justify;
+}
+
+.plaid-gradient {
+    background:
+        repeating-linear-gradient(90deg, transparent, transparent 50px,
+          rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+          transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
+          transparent 69px, transparent 116px,
+          rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+        repeating-linear-gradient(0deg, transparent, transparent 50px,
+          rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px,
+          transparent 56px, transparent 63px,
+          rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px,
+          transparent 69px, transparent 116px,
+          rgba(255, 206, 0, 0.25) 116px, rgba(255, 206, 0, 0.25) 166px),
+        repeating-linear-gradient(-45deg, transparent, transparent 5px,
+          rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px),
+        repeating-linear-gradient(45deg, transparent, transparent 5px,
+          rgba(143, 77, 63, 0.25) 5px, rgba(143, 77, 63, 0.25) 10px);
+  
+    background:
+        repeating-linear-gradient(90deg, transparent 0 50px,
+          rgba(255, 127, 0, 0.25) 50px 56px,
+          transparent 56px 63px,
+          rgba(255, 127, 0, 0.25) 63px 69px,
+          transparent 69px 116px,
+          rgba(255, 206, 0, 0.25) 116px 166px),
+        repeating-linear-gradient(0deg, transparent 0 50px,
+          rgba(255, 127, 0, 0.25) 50px 56px,
+          transparent 56px 63px,
+          rgba(255, 127, 0, 0.25) 63px 69px,
+          transparent 69px 116px,
+          rgba(255, 206, 0, 0.25) 116px 166px),
+        repeating-linear-gradient(-45deg, transparent 0 5px,
+          rgba(143, 77, 63, 0.25) 5px 10px),
+        repeating-linear-gradient(45deg, transparent 0 5px,
+          rgba(143, 77, 63, 0.25) 5px 10px);
+  }
+
+#quoteText {
+    font-family: georgia;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#quoteEl {
+    margin-bottom: 50px;
+}
+
+#speakerEl {
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+#quoteSpeaker {
+  text-align: center;
+  font-size: 70px;
+}
+
+#customizeSearch {
+    margin-right: 650px;
+    width: 40%;
+}
+
+#randomEmoji {
+  font-size: 50px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 30px; 
+    margin-top: 40px;
+    background-color:rgb(255, 255, 107);
+    width: 100%;
+    font-family: oxygen;
+    color: goldenrod;
+    float: right;
+    text-align: right;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 238, 144); /* Fallback color */
+    background-color: rgba(63, 62, 30, 0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fff5ab;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgb(186, 163, 62);
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+    color:rgba(145, 94, 81, 0.3);
+    font-family: georgia;
+}
+  
+  /* The Close Button */
+.close {
+    color: rgb(213, 189, 4);
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: rgb(194, 149, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.containerTwo {
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.label {
+  font-size: 32px;
+}
+
+.button-div {
+  margin: auto;
+}
+
+#authorInput {
+  width: 20%;
+  height: 50px;
+  border:1px solid hsl(50, 100%, 50%);
+  border-radius: 15px;
+}
+
+.submitSearch {
+  width: 100%;
+  border-radius: 15px;
+  background-color:rgb(255, 247, 183);
+}
+
+.row {
+  display: inline-block;
+}
+
+@media screen and (max-width: 575px) {
+
+  .container {
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 1000px;
+}
+
+  #customizeSearch {
+  width: 50%;
+  margin-bottom: 100px;
+  font-size: 40px;
+}
+
+  h2 {
+  font-size: 40px;
+}
+
+  .inspo-io-title {
+  font-size: 60px;
+}
+
+.modal-content {
+  width: 500px; /* Could be more or less, depending on screen size */
+  margin-left: 40px;
+  height: 45%;
+}
+
+  .inspo-io-body {
+  font-family: oxygen;
+  color:hsl(50, 100%, 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 70px;
+}
+
+#quoteSpeaker {
+  text-align: center;
+  font-size: 80px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+
+  h3 {
+  font-size: 40px;
+}
+
+  #authorInput {
+  margin-top: 30px;
+  height: 100px;
+  width: 60%;
+  font-size: 40px;
+  color: goldenrod;
+}
+
+  #photoImgEl {
+  width: 70%;
+}
+
+  .footer {
+  font-size: 40px;
+  height: 60px;
+  width: 575px;
+}
+
+}
