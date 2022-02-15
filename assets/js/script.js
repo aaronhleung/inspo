@@ -107,7 +107,7 @@ function getApi(authorName) {
             console.log(data.primaryImageSmall);
 
             if (!data || !data.primaryImageSmall) {
-                photoText.html("No image found! Please try again");
+                photoText.html("No image found! Please refresh and try again");
                 return;
             }
 
