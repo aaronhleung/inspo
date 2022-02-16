@@ -261,8 +261,12 @@ h2 {
 
 .modal-content {
   width: 500px; /* Could be more or less, depending on screen size */
-  margin-left: 40px;
+  margin-left: 60px;
   height: 60%;
+}
+
+.button-div {
+  margin-top: 10px;
 }
 
   .inspo-io-body {
@@ -299,7 +303,9 @@ h2 {
   .footer {
   font-size: 40px;
   height: 60px;
-  width: 575px;
+  width: 100%;
+  float: left;
+  text-align: left;
 }
 
 }
